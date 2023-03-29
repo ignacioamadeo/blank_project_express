@@ -1,0 +1,39 @@
+/*Esto se aplica a todo el documento*/
+*{
+    margin: 0 0 0;
+    padding: 0 0 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+    text-decoration: none; /*Eliminar viñetas*/
+    list-style: none; /*Eliminar viñetas*/
+}
+
+/*Selecciono elemento usando su nombre: */
+h1{
+    text-align: center;
+    margin: 10px 10px 10px 10px; /*El orden es siempre: margenSuperior margenDerecho margenInferior MargenIzquierdo */
+}
+p{
+    text-align: left;
+    margin: 10px 10px 10px 10px;
+    max-width: 70%; /*Ocupará el 70% de su contenedor, en este caso el ancho de la ventana*/
+}
+/*Selecciono elemento usando su class: */
+.cuerpo_imagen-principal{
+    width: 100px;
+    height: auto;
+    display: block; /*Hace que un elemento, imagen o texto se comporte como un "bloque". Sin esto no funciona el margin:auto*/
+    margin: auto auto auto auto; /*El "auto" distribuye la distancia restante de un contenedor entre sus partes*/
+}
+
+.footer_contenedor-texto{
+    display: block;
+    max-width: 50%;
+    margin: 20px auto auto auto;
+    background-color: rgb(218, 218, 218);
+    border-style: solid;
+    border-color: rgb(83, 83, 83);
+    border-radius: 20px;
+    border-width: 2px;
+    box-shadow: 5px 5px 16px 1px #C4C4C4; /*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator*/
+}
